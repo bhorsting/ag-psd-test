@@ -11,4 +11,4 @@ brew install pkg-config cairo libpng jpeg giflib pango
 npm i
 node index.js
 ```
-Replace `template.psb` with your own template, this one came out of Photopea.
+Replace `template.psb` with your own template, this one came out of [Photopea](https://www.photopea.com).
