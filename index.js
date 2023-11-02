@@ -8,3 +8,13 @@ const buffer = fs.readFileSync('template.psb');
 const psd = readPsd(buffer);
 
 console.log(psd);
+
+// Save a PNG thumbnail
+
+psd.canvas.toBuffer((err, result)=>{
+    if(err){
+        console.error(err);
+    } else {
+        fs.writeFileSync('thumbnail.png', result);
+    }
+});
